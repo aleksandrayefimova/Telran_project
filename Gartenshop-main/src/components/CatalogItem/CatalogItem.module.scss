@@ -1,0 +1,24 @@
+.catalog__navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 390px;
+    margin: 40px 20px 20px;
+
+}
+
+
+@media (max-width: 700px) {
+    .catalog__navi {
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 0;
+
+
+    }
+
+    .catalog__h2 {
+        margin: 0 0 30px 0;
+
+    }
+}
