@@ -1,8 +1,9 @@
 @mixin button() {
     cursor: pointer;
     font-weight: 700;
+    // line-height: 130%;
+    // display: inline-block;
 }
-
 @mixin howered($hoverColor, $radius) {
     transition: all 0.3s;
     position: relative;
@@ -35,17 +36,14 @@
 
     &:hover {
         color: #fff;
-
         &:before {
             width: 100%;
         }
     }
 }
-
 @mixin whiteBackground() {
     background: #fff;
 }
-
 @mixin buttonGreen() {
     border: 2px solid #393;
     background: #393;
@@ -59,7 +57,6 @@
     padding: 10px;
     font-size: 14px;
 }
-
 .button_green {
     @include button();
     @include buttonGreen();
@@ -101,7 +98,7 @@
 
     letter-spacing: 0.36px;
 }
-
+// button add to cart hover
 .add_to_cart {
     @include button();
 
@@ -122,7 +119,6 @@
 
     transition: all 0.5s ease;
 }
-
 .add_to_cart_unvis {
     position: absolute;
     top: 190px;
@@ -141,21 +137,19 @@
     border-radius: 10px;
     width: 341px;
     height: 86px;
-
+    // padding: 25px 120px;
     font-size: 28px;
     transition: ease 0.5s;
 
     @media (max-width: 1000px) {
         margin: 0 auto;
     }
-
     @media (max-width: 400px) {
         width: 241px;
         height: 66px;
         font-size: 20px;
     }
 }
-
 .button_order {
     @include button();
     @include buttonGreen();
@@ -168,7 +162,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    line-height: 130%;
+    line-height: 130%; /* 36.4px */
     letter-spacing: 0.84px;
 
     @media (max-width: 500px) {

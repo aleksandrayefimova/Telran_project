@@ -6,24 +6,25 @@ import { Link } from 'react-router-dom';
 
 
 export default function Banner() {
+  
 
+  
 
-
-
-  const clickHandle = () => {
-    const saleElement = document.getElementById('sale');
-    saleElement.scrollIntoView({ behavior: 'smooth' });
-  };
+    const clickHandle = () => {
+      const saleElement = document.getElementById('sale');
+      saleElement.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
     <div className={s.banner}>
-      <div className={s.banner__content}>
-        <h2 className='block__title'>Sale</h2>
-        <h3>New season</h3>
-        {/* <Link to='/sales'><Button className={'button_sale'} name={'Sale'} clickHandle={clickHandle}/></Link> */}
-        <Button className={'button_sale'} name={'Sale'} clickHandle={clickHandle} />
-      </div>
-      <img src={image} alt="banner" />
+        <div className={s.banner__content}>
+            <h1 hidden >Garden shop</h1>
+            <h2 className='block__title'>Sale</h2>
+            <h3>New season</h3>
+            {/* <Link to='/sales'><Button className={'button_sale'} name={'Sale'} clickHandle={clickHandle}/></Link> */}
+            <Button className={'button_sale'} name={'Sale'} clickHandle={clickHandle}/>
+        </div>
+        <img src={image} alt="banner" />
     </div>
   )
 }

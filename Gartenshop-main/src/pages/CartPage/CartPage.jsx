@@ -52,9 +52,9 @@ export default function CartPage() {
 
     return (
         <div className={s.page}>
-            <Message
+            <Massage
                 className={
-                    showMessage ? "message_order" : "message_order hidden"
+                    showMessage ? "massage_order" : "massage_order hidden"
                 }
                 name="order sent"
             />

@@ -7,31 +7,26 @@
         font-weight: 700;
         line-height: 130%;
     }
-
     // phone side
     &__icon {
         transition: all 0.5s ease;
     }
-
-    &__icon:hover>path {
+    &__icon:hover > path {
         fill: #139624;
         width: 60px;
         height: 60px;
         transition: all 0.5s ease;
     }
-
-    &__icon:hover+p {
+    &__icon:hover + p {
         color: #139624;
         // font-weight: 700;
         transition: all 0.5s ease;
     }
-
     &__info {
         display: flex;
         justify-content: space-between;
         margin-bottom: 40px;
     }
-
     &__phone {
         h2 {
             color: #000;
@@ -40,7 +35,6 @@
             line-height: 130%;
         }
     }
-
     &__links {
         display: flex;
         gap: 60px;
@@ -63,49 +57,40 @@
                 font-size: 15px;
                 font-weight: 600;
                 // transition: all 0.5s ease;
-                line-height: 130%;
-                /* 19.5px */
+                line-height: 130%; /* 19.5px */
             }
         }
     }
-
     // address side
     &__address {
         p {
             color: #000;
             font-size: 18px;
             font-weight: 500;
-            line-height: 130%;
-            /* 23.4px */
+            line-height: 130%; /* 23.4px */
             margin-top: 20px;
         }
-
         h5 {
             color: #000;
             font-size: 24px;
             font-weight: 600;
-            line-height: 130%;
-            /* 31.2px */
+            line-height: 130%; /* 31.2px */
         }
     }
-
     &__address_link {
         max-width: 564px;
         font-size: 40px;
         font-weight: 600;
-        line-height: 130%;
-
-        /* 52px */
+        line-height: 130%; /* 52px */
         a {
-            transition: all 0.5s ease;
-            color: #000;
+                transition: all 0.5s ease;
+                color: #000;
         }
     }
-
     &__address_link:hover {
         a {
             color: #139624;
-            transition: all 0.5s ease;
+                transition: all 0.5s ease;
 
         }
     }
@@ -114,7 +99,6 @@
         h4 {
             font-size: 35px;
         }
-
         // phone side
 
         &__phone {
@@ -123,25 +107,21 @@
             }
         }
     }
-
     @media (max-width: 1160px) {
         h4 {
             font-size: 30px;
         }
-
         &__phone {
             h2 {
                 font-size: 40px;
             }
         }
-
         // address side
         &__address {
             h5 {
                 font-size: 24px;
             }
         }
-
         &__address_link {
             font-size: 30px;
         }
@@ -151,7 +131,6 @@
         h4 {
             font-size: 20px;
         }
-
         // phone side
         &__info {
             flex-direction: column;
@@ -159,14 +138,13 @@
             justify-content: center;
         }
     }
-
     @media (max-width: 470px) {
+        // font-size: 30px;
         &__phone {
             h2 {
                 font-size: 25px;
             }
         }
-
         &__address_link {
             font-size: 20px;
         }

@@ -29,7 +29,6 @@ export const CartReducer = createSlice({
         }
     },
         add_to_cart(state, action) {
-          // console.log(action);
             const updatedCart = checkProduct(state.cart, action.payload);
             state.cart = updatedCart;
             state.total_count = updatedCart.reduce(
@@ -60,7 +59,6 @@ export const CartReducer = createSlice({
 
         },
         decrement_count(state, action) {
-          console.log(action);
 
             const product = state.cart.find((el) => el.id === action.payload);
             if (product) {
@@ -102,9 +100,7 @@ export const CartReducer = createSlice({
             state.total_count = 0;
             state.total_sum = 0;
 
-            // localStorage.clear();
             localStorage.removeItem('cartData')
-            // localStorage.setItem('cartData', JSON.stringify(state)).
 
         },
     },

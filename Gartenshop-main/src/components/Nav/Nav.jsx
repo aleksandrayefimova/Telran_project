@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 
 export default function Nav() {
     const totalCount = useSelector(state=> state.cart.total_count)
-    console.log(totalCount);
     const setActiveLink = ({ isActive }) => (isActive ? "item_active" : "item");
     const [isOpen, setOpen] = useState(false);
     const [productCount, setProductCount] = useState(0);
@@ -76,7 +75,6 @@ export default function Nav() {
                     {cartStorage > 0 && (
                         <div className={s.cart__count}>{productCount}</div>
                     )}
-                    {/* <img src={cartIcon} alt="cart" /> */}
                     <Cart className={s.cart__icon}/>
                 </div>
             </Link>

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.scss";
 import { Routes, Route, Router } from "react-router-dom";
 import Layout from "./pages/Layout";

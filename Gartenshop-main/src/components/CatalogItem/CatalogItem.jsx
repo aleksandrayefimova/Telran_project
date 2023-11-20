@@ -9,7 +9,7 @@ export default function CatalogItem() {
     return (
         <div>
             <div className={s.catalog__navi}>
-                <Title titleValue={'Catalog'} titleClassName={'block__title'} />
+                <Title titleValue={'Catalog'} titleClassName={'block__title'}/>
 
                 <Link to="/categories">
                     <Button name="All categories" className="categories" />

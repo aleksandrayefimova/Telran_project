@@ -1,11 +1,14 @@
 import { useDispatch } from "react-redux";
 import s from "./CategoryItem.module.scss";
 import React from "react";
+// import {byCategoriesItems} from '../../store/reducers/ProductsListReducer'
 
 
 export default function CategoryItem({ category }) {
     const dispatch = useDispatch();
-    const handleClick = () => {
+    const handleClick = ()=>{
+        // dispatch(byCategoriesItems(category.id))
+        // console.log(category.id);
 
     }
     return (

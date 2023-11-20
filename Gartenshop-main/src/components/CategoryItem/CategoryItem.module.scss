@@ -1,6 +1,8 @@
-.category__item {
-    cursor: pointer;
 
+
+.category__item{
+    cursor: pointer;
+    // height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,17 +11,16 @@
     gap: 20px;
 
     margin: 0px 0 60px 0;
-
+    
 
 }
-
-.category__img {
+.category__img{
     width: 318px;
     height: 350px;
     flex-shrink: 0;
     overflow: hidden;
-
-    img {
+    
+    img{
         height: 100%;
         width: 100%;
         object-fit: cover;
@@ -27,5 +28,5 @@
         transform: scale(1.1);
 
     }
-
+   
 }

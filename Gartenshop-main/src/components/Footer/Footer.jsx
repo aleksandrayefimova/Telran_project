@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Footer.module.scss";
-import { ReactComponent as Instagram } from "../../assets/instagram.svg"
-import { ReactComponent as WhatsAppIcon } from "../../assets/whatsApp.svg"
+import {ReactComponent as Instagram} from "../../assets/instagram.svg"
+import {ReactComponent as WhatsAppIcon} from "../../assets/whatsApp.svg"
 export default function Footer() {
     return (
         <div className={s.contacts}>
@@ -13,27 +13,27 @@ export default function Footer() {
                         <div>
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                 {/* <img src={instagram} alt="instagram" className={s.contacts__icon}/> */}
-                                <Instagram className={s.contacts__icon} />
+                                <Instagram className={s.contacts__icon}/>
                                 <p>instagram</p>
                             </a>
                         </div>
                         <div>
                             <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
                                 {/* <img src={whatsApp} alt="WhatsApp" className={s.contacts__icon}/> */}
-                                <WhatsAppIcon className={s.contacts__icon} />
+                                <WhatsAppIcon className={s.contacts__icon}/>
                                 <p>WhatsApp</p>
                             </a>
                         </div>
                     </div>
-
+          
                 </div>
                 <div className={s.contacts__address}>
                     <h4>Address</h4>
                     <div className={s.contacts__address_link}>
-                        <a href="https://www.google.com/search?q=telranDE" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.google.com/search?q=telranDE"  target="_blank" rel="noopener noreferrer">
                             Linkstraße 2, 8 OG, 10785,
                         </a>
-                        <a href="https://www.google.com/search?q=telranDE" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.google.com/search?q=telranDE"  target="_blank" rel="noopener noreferrer">
                             Berlin, Deutschland
                         </a>
                     </div>
@@ -46,7 +46,7 @@ export default function Footer() {
                 width="100%"
                 height="525"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen =""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
             ></iframe>

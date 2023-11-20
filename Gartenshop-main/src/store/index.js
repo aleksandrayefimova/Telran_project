@@ -1,8 +1,9 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit'
-import productList from "./reducers/ProductsListReducer";
-import categoriesReducer from "./reducers/CategoryReducer";
+import {configureStore,combineReducers} from '@reduxjs/toolkit'
+import  productList  from "./reducers/ProductsListReducer";
+import  categoriesReducer  from "./reducers/CategoryReducer";
 import CartReducer from './reducers/CartReducer';
-
+// import CartReducer from './reducers/CartReducer';
+// import { productReducer } from "./reducers/ProductReducer";
 
 
 
@@ -13,6 +14,6 @@ const rootReducer = combineReducers(
         cart: CartReducer,
     }
 )
-
-const store = configureStore({ reducer: rootReducer })
-export default store
+// const store = configureStore(rootReducer, applyMiddleware(thunk))
+const store = configureStore( {reducer:rootReducer})
+export default   store
